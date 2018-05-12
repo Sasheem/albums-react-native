@@ -1,12 +1,15 @@
 import React from 'react';
 import { Text } from 'react-native';
 import Card from './Card';
+import CardSection from './CardSection';
 
 // functional component b/c it serves just to present data to UI
 const AlbumDetail = (props) => {
   return (
     <Card>
-      <Text>{props.album.title}</Text>
+      <CardSection>
+        <Text>{props.album.title}</Text>
+      </CardSection>
     </Card>
   );
 };
